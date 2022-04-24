@@ -1,0 +1,18 @@
+.Footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1em 0;
+  background: #0b0434;
+  text-align: center;
+  color: #fff;
+  &__legal {
+    margin-top: 1em;
+    a {
+      color: #777;
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+}

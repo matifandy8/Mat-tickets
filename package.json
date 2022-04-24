@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "sass": "sass src/stylesheets:src/css --watch --no-source-map"
+    "sass": "sass src/Stylesheets:src/css --watch --no-source-map"
   },
   "dependencies": {
     "node-sass": "^7.0.1",

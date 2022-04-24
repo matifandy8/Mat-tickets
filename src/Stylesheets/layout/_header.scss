@@ -1,0 +1,32 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #a8a8a8;
+  &__logo {
+    display: flex;
+    align-items: center;
+    &-text {
+      font-size: 1.5em;
+      margin: 5px;
+      font-weight: 700;
+      color: #0b0434;
+    }
+  }
+  &__auth {
+    a {
+      margin: 0.2rem 0.5rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 5px;
+      color: #333;
+      font-weight: 600;
+      text-decoration: none;
+
+      &:hover {
+        color: #fff;
+        background-color: rgb(120 72 244);
+      }
+    }
+  }
+}
