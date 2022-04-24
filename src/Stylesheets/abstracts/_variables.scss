@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+// variables.$text-font-stack
+ $text-font-stack:   'PT Sans Narrow', sans-serif;
+
+
+//  variables.$primary-color
+ $primary-color:  #000;
+
+//  variables.$title-color
+ $title-color:  #000000;
+
+//  variables.$secondary-color
+$secondary-color:  #ffffff;
+
+
+$max-width: 1180px;
+
+$breakpoints: (
+  'small': 600px,
+  'medium': 768px,
+  'large': 960px,
+);
+
+
+
+$base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/';
