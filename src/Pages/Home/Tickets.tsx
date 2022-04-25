@@ -1,8 +1,17 @@
+import { useEffect, useState } from "react";
 import Cardticket from "./Cardticket";
+import { TicketItem } from "../../../types";
 
 const Tickets = () => {
 
-    //llamada a la api que tenga los datos de los tickets
+    //llamada a la api que tenga los datos de los tickets https://my-json-server.typicode.com/matifandy8/Mat-tickets/tickets
+    const [tickets, setTickets] = useState<any>([]);
+    useEffect(() => {
+        fetch("https://my-json-server.typicode.com/matifandy8/Mat-tickets/tickets")
+            .then(response => response.json())
+            .then(data => setTickets(data));
+    }, []);
+    
     
   return (
     <div className="Tickets">
@@ -10,12 +19,9 @@ const Tickets = () => {
         <input type="text" placeholder="Search for a ticket" />
       </div>
       <div className="Tickets__list">
-       <Cardticket />  
-       <Cardticket/>     
-       <Cardticket/>     
-       <Cardticket/>     
-       <Cardticket/>     
-       <Cardticket/>        
+        {tickets.map((ticket: TicketItem) => (
+            <Cardticket key={ticket._id} ticket={ticket} />
+        ))}
       </div>
     </div>
   );

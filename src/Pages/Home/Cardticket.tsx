@@ -1,14 +1,14 @@
-function Cardticket() {
+function Cardticket({ ticket }: any) {
   return (
     <div className="Cardticket">
-      <img src="https://api.lorem.space/image/movie?" alt="" />
+      <img src={ticket.image} alt={ticket.name} />
       <div className="Cardticket__text">
         <div className="Cardticket__text-time">
-          <p>Sep 18</p>
+          <p> { ticket.date} </p>
         </div>
         <div className="Cardticket__text-title">
           <h4>
-            <b>John Doe</b>
+            <b> {ticket.name} </b>
           </h4>
           <p>Architect & Engineer</p>
         </div>
