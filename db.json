@@ -4,36 +4,42 @@
             "id": 1,
             "date": "19/10/22",
             "show": "Justin Bieber",
+            "price": 20,
             "image": "https://i.ibb.co/xL2Dsfn/justin.webp"
         },
         {
             "id": 2,
             "date": "19/10/22",
             "show": "Justin Bieber",
+            "price": 20,
             "image": "https://i.ibb.co/xL2Dsfn/justin.webp"
         },
         {
             "id": 3,
             "date": "19/10/22",
             "show": "Justin Bieber",
+            "price": 20,
             "image": "https://i.ibb.co/xL2Dsfn/justin.webp"
         },
         {
             "id": 4,
             "date": "19/10/22",
             "show": "Justin Bieber",
+            "price": 20,
             "image": "https://i.ibb.co/xL2Dsfn/justin.webp"
         },
         {
             "id": 5,
             "date": "19/10/22",
             "show": "Justin Bieber",
+            "price": 20,
             "image": "https://i.ibb.co/xL2Dsfn/justin.webp"
         },
         {
             "id": 6,
             "date": "19/10/22",
             "show": "Justin Bieber",
+            "price": 20,
             "image": "https://i.ibb.co/xL2Dsfn/justin.webp"
         }
     ]

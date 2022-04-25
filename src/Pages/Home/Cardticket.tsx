@@ -8,9 +8,9 @@ function Cardticket({ ticket }: any) {
         </div>
         <div className="Cardticket__text-title">
           <h4>
-            <b> {ticket.name} </b>
+            <b> {ticket.show} </b>
           </h4>
-          <p>Architect & Engineer</p>
+          <p> {ticket.price} </p>
         </div>
       </div>
     </div>
