@@ -1,0 +1,40 @@
+{
+    "tickets": [
+        {
+            "id": 1,
+            "date": "19/10/22",
+            "show": "Justin Bieber",
+            "image": "https://www.billboard.com/files/styles/article_main_image/public/media/justin-bieber-tickets-2018-billboard-650.jpg"
+        },
+        {
+            "id": 2,
+            "date": "19/10/22",
+            "show": "Justin Bieber",
+            "image": "https://www.billboard.com/files/styles/article_main_image/public/media/justin-bieber-tickets-2018-billboard-650.jpg"
+        },
+        {
+            "id": 3,
+            "date": "19/10/22",
+            "show": "Justin Bieber",
+            "image": "https://www.billboard.com/files/styles/article_main_image/public/media/justin-bieber-tickets-2018-billboard-650.jpg"
+        },
+        {
+            "id": 4,
+            "date": "19/10/22",
+            "show": "Justin Bieber",
+            "image": "https://www.billboard.com/files/styles/article_main_image/public/media/justin-bieber-tickets-2018-billboard-650.jpg"
+        },
+        {
+            "id": 5,
+            "date": "19/10/22",
+            "show": "Justin Bieber",
+            "image": "https://www.billboard.com/files/styles/article_main_image/public/media/justin-bieber-tickets-2018-billboard-650.jpg"
+        },
+        {
+            "id": 6,
+            "date": "19/10/22",
+            "show": "Justin Bieber",
+            "image": "https://www.billboard.com/files/styles/article_main_image/public/media/justin-bieber-tickets-2018-billboard-650.jpg"
+        }
+    ]
+}

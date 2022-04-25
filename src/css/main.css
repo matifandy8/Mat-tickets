@@ -467,7 +467,7 @@ a {
 }
 
 .Footer {
-  position: absolute;
+  margin-top: 50px;
   bottom: 0;
   width: 100%;
   padding: 1em 0;
@@ -507,6 +507,40 @@ a {
 }
 .hero__text-subtitle {
   font-size: 20px;
+}
+
+.Tickets__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+
+.Cardticket {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+.Cardticket img {
+  width: 100%;
+  height: auto;
+}
+.Cardticket:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.Cardticket__text {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 16px;
+}
+.Cardticket__text-time {
+  padding-right: 5px;
+  text-align: left;
+}
+.Cardticket__text-title {
+  padding-left: 15px;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

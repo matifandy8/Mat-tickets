@@ -9,6 +9,7 @@
     "sass": "sass src/Stylesheets:src/css --watch --no-source-map"
   },
   "dependencies": {
+    "json-server": "^0.17.0",
     "node-sass": "^7.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
