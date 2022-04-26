@@ -2,45 +2,45 @@
     "tickets": [
         {
             "id": 1,
-            "date": "19/10/22",
-            "show": "Justin Bieber",
-            "price": 20,
-            "image": "https://i.ibb.co/xL2Dsfn/justin.webp"
+            "date": "9/10/22",
+            "show": "Gorillaz",
+            "price": 300,
+            "image": "https://i.ibb.co/Phsb0NL/gorillaz.jpg"
         },
         {
             "id": 2,
             "date": "19/10/22",
-            "show": "Justin Bieber",
-            "price": 20,
-            "image": "https://i.ibb.co/xL2Dsfn/justin.webp"
+            "show": "Metallica",
+            "price": 200,
+            "image": "https://i.ibb.co/yYTr24K/metallica.png"
         },
         {
             "id": 3,
-            "date": "19/10/22",
-            "show": "Justin Bieber",
-            "price": 20,
-            "image": "https://i.ibb.co/xL2Dsfn/justin.webp"
+            "date": "29/9/22",
+            "show": "Javascript-conference",
+            "price": 25,
+            "image": "https://i.ibb.co/3Cg25SV/jsconference.jpg"
         },
         {
             "id": 4,
-            "date": "19/10/22",
-            "show": "Justin Bieber",
-            "price": 20,
-            "image": "https://i.ibb.co/xL2Dsfn/justin.webp"
+            "date": "14/4/23",
+            "show": "React Summit",
+            "price": 30,
+            "image": "https://i.ibb.co/Gpzt5hF/reactsummit.png"
         },
         {
             "id": 5,
-            "date": "19/10/22",
-            "show": "Justin Bieber",
-            "price": 20,
-            "image": "https://i.ibb.co/xL2Dsfn/justin.webp"
+            "date": "02/06/22",
+            "show": "NBA Finals",
+            "price": 500,
+            "image": "https://i.ibb.co/jR7CcBW/nbafinals.jpg"
         },
         {
             "id": 6,
-            "date": "19/10/22",
-            "show": "Justin Bieber",
-            "price": 20,
-            "image": "https://i.ibb.co/xL2Dsfn/justin.webp"
+            "date": "28/05/22",
+            "show": "UEFA Champions League final",
+            "price": 550,
+            "image": "https://i.ibb.co/gZVXHJ2/champions.jpg"
         }
     ]
 }

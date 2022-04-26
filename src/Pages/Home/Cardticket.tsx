@@ -4,13 +4,13 @@ function Cardticket({ ticket }: any) {
       <img src={ticket.image} alt={ticket.name} />
       <div className="Cardticket__text">
         <div className="Cardticket__text-time">
-          <p> { ticket.date} </p>
+          <p> {ticket.date} </p>
         </div>
         <div className="Cardticket__text-title">
           <h4>
-            <b> {ticket.show} </b>
+            <b>{ticket.show}</b>
           </h4>
-          <p> {ticket.price} </p>
+          <p>$ {ticket.price}</p>
         </div>
       </div>
     </div>
