@@ -516,6 +516,45 @@ a {
   align-items: stretch;
 }
 
+.Tickets__searchbar {
+  background-color: #0b0434;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Tickets__searchbar input {
+  color: white;
+  border: none;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+  height: 45px;
+  padding-right: 50px;
+  border-bottom: 2px solid #7848f4;
+  margin: 10px;
+  width: 80%;
+}
+.Tickets__searchbar input:focus {
+  outline: none;
+}
+.Tickets__searchbar button {
+  cursor: pointer;
+  background: #7848f4;
+  color: white;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+.Tickets__searchbar button:hover {
+  background: #4f29da;
+}
+
 .Cardticket {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;

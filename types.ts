@@ -1,6 +1,6 @@
 export interface TicketItem {
-    _id: string
-    name: string
+    id: string
+    show: string
     price: number
     date: string
     image: string

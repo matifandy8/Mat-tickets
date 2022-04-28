@@ -1,6 +1,6 @@
 function Cardticket({ ticket }: any) {
   return (
-    <div className="Cardticket">
+    <div className="Cardticket" >
       <img src={ticket.image} alt={ticket.name} />
       <div className="Cardticket__text">
         <div className="Cardticket__text-time">
