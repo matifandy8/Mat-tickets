@@ -3,6 +3,7 @@ import Cardticket from "./Cardticket";
 import { TicketItem } from "../../../types";
 
 const Tickets = () => {
+  const [tickets, setTickets] = useState<TicketItem[]>([]);
   const [FilteredTickets, setFilteredTickets] = useState<TicketItem[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [text, setText] = useState("");
@@ -13,7 +14,7 @@ const Tickets = () => {
     if (text === "") {
       setText("");
       setLoading(false);
-      getTickets();
+      setFilteredTickets(tickets);
     } else {
       const Search = fetch(
         `https://my-json-server.typicode.com/matifandy8/Mat-tickets/tickets/?q=${text}`
@@ -36,11 +37,14 @@ const Tickets = () => {
     const data = await response.json();
     setLoading(false);
     setFilteredTickets(data);
+    setTickets(data);
   };
 
   useEffect(() => {
     getTickets();
   }, []);
+
+  console.log(tickets);
 
   return (
     <div className="Tickets">
