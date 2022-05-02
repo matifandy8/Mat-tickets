@@ -1,7 +1,7 @@
 function Cardticket({ ticket }: any) {
   return (
     <div className="Cardticket" >
-      <img src={ticket.image} alt={ticket.name} />
+      <img src={ticket.image} alt={ticket.show} />
       <div className="Cardticket__text">
         <div className="Cardticket__text-time">
           <p> {ticket.date} </p>

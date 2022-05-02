@@ -3,6 +3,8 @@ import Cardticket from "./Cardticket";
 import { TicketItem } from "../../../types";
 import { useFetch } from "../../Hooks/useFetch";
 
+import { Link } from "react-router-dom";
+
 const Tickets = () => {
   const [endpoint, setEndpoint] = useState("tickets");
   const [text, setText] = useState("");
@@ -37,7 +39,9 @@ const Tickets = () => {
           <div>Loading...</div>
         ) : (
           data?.map((ticket: TicketItem) => (
+            <Link to={`/tickets/${ticket.id}`} key={ticket.id}>
             <Cardticket key={ticket.id} ticket={ticket} />
+            </Link>
           ))
         )}
       </div>

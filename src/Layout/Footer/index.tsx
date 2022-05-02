@@ -3,10 +3,7 @@ const Footer = () => {
     <div className="Footer">
       <div className="Footer__legal">
         <p>
-          &copy; 2022 -{" "}
-          <a  href="" target="_blank">
-            Mat-Tickets
-          </a>
+          &copy; 2022 - <a href="/">Mat-Tickets</a>
         </p>
       </div>
     </div>
