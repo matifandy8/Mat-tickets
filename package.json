@@ -9,14 +9,18 @@
     "sass": "sass src/Stylesheets:src/css --watch --no-source-map"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
+    "@hookform/resolvers": "^2.8.8",
     "@types/react-router-dom": "^5.3.3",
     "axios": "^0.27.2",
     "json-server": "^0.17.0",
     "node-sass": "^7.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-hook-form": "^7.30.0",
     "react-router-dom": "^6.3.0",
-    "sass": "^1.50.1"
+    "sass": "^1.50.1",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

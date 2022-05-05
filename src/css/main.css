@@ -585,3 +585,17 @@ a {
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
+.ticket {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  padding: 38px;
+  margin: 0 auto;
+}
+.ticket__img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
