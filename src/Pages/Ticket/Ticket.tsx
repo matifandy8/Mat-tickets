@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
 import { useFetch } from "../../Hooks/useFetch";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
+import axios from "axios";
 
 type UserSubmitForm = {
   fullname: string;
@@ -19,8 +20,13 @@ const Ticket = () => {
   const { data, loading, error } = useFetch(endpoint);
 
   const validationSchema = Yup.object().shape({
-    email: Yup.string().required("Email is required").email("Email is invalid")
-          .matches(/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/, "Email is invalid"),
+    email: Yup.string()
+      .required("Email is required")
+      .email("Email is invalid")
+      .matches(
+        /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+        "Email is invalid"
+      ),
     fullname: Yup.string()
       .required("Fullname is required")
       .min(6, "Fullname must be at least 6 characters")
@@ -44,12 +50,22 @@ const Ticket = () => {
 
   const onSubmit = (dataForm: UserSubmitForm) => {
     console.log(JSON.stringify(dataForm, null, 2));
-    console.log(dataForm); 
+    console.log(dataForm);
     console.log(data);
-
+    axios
+      .post("http://localhost:3001/mail", {
+        fullname: dataForm.fullname,
+        tomail: dataForm.email,
+      })
+      .then((response) => {
+        if (response.data.msg === "success") {
+          alert("Email sent, awesome!");
+        } else if (response.data.msg === "fail") {
+          alert("Oops, something went wrong. Try again");
+        }
+      });
   };
 
- 
   return (
     <div className="Ticket">
       {loading ? (
@@ -88,9 +104,7 @@ const Ticket = () => {
               <input
                 type="text"
                 {...register("phone")}
-                className={`form-control ${
-                  errors.phone ? "is-invalid" : ""
-                }`}
+                className={`form-control ${errors.phone ? "is-invalid" : ""}`}
               />
               <div className="invalid-feedback">{errors.phone?.message}</div>
             </div>
@@ -113,7 +127,7 @@ const Ticket = () => {
             <div className="form-group">
               <button type="submit" className="btn btn-primary">
                 Buy ticket
-              </button> 
+              </button>
             </div>
           </form>
         </div>
