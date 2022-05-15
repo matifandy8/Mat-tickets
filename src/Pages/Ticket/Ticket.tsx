@@ -72,10 +72,13 @@ const Ticket = () => {
         <div>Loading...</div>
       ) : (
         <div className="ticket">
-          <img className="ticket__img" src={data?.image} alt={data?.show} />
+          <div className="ticket__info">
+            <img className="ticket__img" src={data?.image} alt={data?.show} />
           <h1>{data?.show}</h1>
           <p> {data?.date} </p>
           <p>{data?.price}</p>
+          </div>
+          
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-group">
               <label>Email</label>

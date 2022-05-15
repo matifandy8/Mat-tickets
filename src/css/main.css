@@ -597,5 +597,51 @@ a {
 .ticket__img {
   width: 100%;
   height: auto;
+}
+.ticket form {
+  width: 100%;
+  margin: 40px;
+}
+.ticket form .form-check {
+  margin-top: 10px;
   margin-bottom: 20px;
+}
+.ticket form .form-check label {
+  margin-left: 5px;
+}
+.ticket form .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.ticket form .form-group input {
+  height: 45px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid #23334f;
+  padding-left: 0;
+}
+.ticket form .form-group input:focus {
+  outline: none;
+  border-bottom: 1px solid #ce4523;
+}
+.ticket form .form-group button {
+  cursor: pointer;
+  margin: 0.5rem 0.7rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(120, 72, 244);
+  border: none;
+  font-weight: 600;
+  text-decoration: none;
+}
+.ticket form .form-group button:hover {
+  background-color: rgb(87, 26, 243);
+}
+.ticket form .form-group .invalid-feedback {
+  color: red;
+  margin: 5px;
 }
