@@ -1,5 +1,4 @@
 import { createContext, useContext } from "react";
-
 type User = {
   username: string;
   password: string;
@@ -13,6 +12,7 @@ export const AuthContext = createContext({} as any);
 const { Provider } = AuthContext;
 
 export const AuthProvider = ({ children }: Props) => {
+
   const logout = () => {
     localStorage.removeItem("auth");
     window.location.href = "/login";
@@ -24,10 +24,12 @@ export const AuthProvider = ({ children }: Props) => {
   };
 
   const login = async ({ username, password }: User) => {
-    if (username === "admin" && password === "admin") {
+      console.log(username, password);
+    if (username === "admin1" && password === "admin123456") {
       localStorage.setItem("auth", "abcdef");
     } else {
       console.log("error");
+      alert("Invalid username or password");
     }
   };
 

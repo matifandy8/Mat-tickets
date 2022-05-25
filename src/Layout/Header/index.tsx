@@ -7,7 +7,7 @@ const Header = () => {
        <a href="/"><h1 className="Header__logo-text">Mat-Tickets</h1> </a> 
       </div>
       <div className="Header__auth">
-        <a href="/">Login</a>
+        <a href="/login">Login</a>
         <a href="/">Sign Up</a>
       </div>
     </div>
