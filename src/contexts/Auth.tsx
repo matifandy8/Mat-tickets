@@ -1,4 +1,4 @@
-import { createContext, useContext } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 type User = {
   username: string;
   password: string;
@@ -12,7 +12,6 @@ export const AuthContext = createContext({} as any);
 const { Provider } = AuthContext;
 
 export const AuthProvider = ({ children }: Props) => {
-
   const logout = () => {
     localStorage.removeItem("auth");
     localStorage.removeItem("user");
@@ -25,7 +24,7 @@ export const AuthProvider = ({ children }: Props) => {
   };
 
   const login = async ({ username, password }: User) => {
-      console.log(username, password);
+    console.log(username, password);
     if (username === "admin1" && password === "admin123456") {
       localStorage.setItem("auth", "abcdef");
       localStorage.setItem("user", JSON.stringify({ username }));
@@ -36,7 +35,16 @@ export const AuthProvider = ({ children }: Props) => {
     }
   };
 
-  return <Provider value={{ logout, login, isLoggedIn }}>{children}</Provider>;
+  const getUser = () => {
+    if (localStorage.getItem("user")) {
+      const data:any = localStorage.getItem("user");
+      const parsedUser = JSON.parse(data);
+      return parsedUser.username;
+    }
+    return "";
+  };
+
+  return <Provider value={{ logout, login, isLoggedIn,getUser }}>{children}</Provider>;
 };
 
 export const useAuth = () => {

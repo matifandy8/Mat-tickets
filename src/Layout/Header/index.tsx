@@ -1,17 +1,8 @@
-import { useEffect, useState } from "react";
 import { useAuth } from "../../contexts/Auth";
 
 const Header = () => {
-  const { logout } = useAuth();
-
-  const [username, setUsername] = useState("");
-  useEffect(() => {
-    const user = localStorage.getItem("user");
-    if (user) {
-      const parsedUser = JSON.parse(user);
-      setUsername(parsedUser.username);
-    }
-  }, []);
+  const { logout, getUser } = useAuth();
+  const username = getUser();
 
   if (username !== "") {
     return (
@@ -22,8 +13,8 @@ const Header = () => {
           </a>
         </div>
         <div className="Header__auth">
-        <button onClick={logout}>Logout</button>
-        <p>{username}</p>
+          <button onClick={logout}>Logout</button>
+          <p>{username}</p>
         </div>
       </div>
     );
