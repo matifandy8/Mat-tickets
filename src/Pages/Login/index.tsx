@@ -55,6 +55,7 @@ const Ticket = () => {
     setWrongPassword(false);
     navigate('/');
     console.log(login)
+    
   };
 
   return (
@@ -71,7 +72,7 @@ const Ticket = () => {
             </div>
 
             <div className="form-group">
-              <label>username</label>
+              <label>Username</label>
               <input
                 type="username"
                 {...register("username")}

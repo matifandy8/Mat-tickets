@@ -15,6 +15,7 @@ export const AuthProvider = ({ children }: Props) => {
 
   const logout = () => {
     localStorage.removeItem("auth");
+    localStorage.removeItem("user");
     window.location.href = "/login";
   };
 
@@ -27,6 +28,8 @@ export const AuthProvider = ({ children }: Props) => {
       console.log(username, password);
     if (username === "admin1" && password === "admin123456") {
       localStorage.setItem("auth", "abcdef");
+      localStorage.setItem("user", JSON.stringify({ username }));
+      window.location.href = "/";
     } else {
       console.log("error");
       alert("Invalid username or password");
