@@ -37,7 +37,7 @@ export const AuthProvider = ({ children }: Props) => {
 
   const getUser = () => {
     if (localStorage.getItem("user")) {
-      const data:any = localStorage.getItem("user");
+      const data = localStorage.getItem("user") || '{}';
       const parsedUser = JSON.parse(data);
       return parsedUser.username;
     }

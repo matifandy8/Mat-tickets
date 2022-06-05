@@ -1,17 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Fragment, Suspense } from "react";
 
-
 import "./App.css";
 import { AuthProvider } from "./contexts/Auth";
 import Layout from "./Layout";
 const Ticket = lazy(() => import("./Pages/Ticket/Ticket"));
 const Home = lazy(() => import("./Pages/Home"));
 const Login = lazy(() => import("./Pages/Login"));
-
-
-
-
 
 function App() {
   return (
